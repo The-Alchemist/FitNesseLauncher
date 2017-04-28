@@ -1,6 +1,11 @@
 machine:
   java:
     version: oraclejdk8
+
+dependencies:
+  override:
+    - mvn dependency:tree
+    
 test:
   override:
     - mvn integration-test
